@@ -6,7 +6,9 @@
 [context.branch-deploy.environment]
   NODE_ENV = 'development'
   SECOND_VAR = 'dev stuff'
+  THIRD_VAR = 'more dev stuff'
 
 [context.dev.environment]
   NODE_ENV = 'development'
   SECOND_VAR = 'dev stuff'
+  THIRD_VAR = 'more dev stuff'
