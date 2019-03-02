@@ -50,7 +50,11 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      
+
     }
-  }
+  },
+
+  env: {
+    NODE_ENV: process.env.NODE_ENV,
+  },
 }

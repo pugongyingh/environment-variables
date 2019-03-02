@@ -1,0 +1,10 @@
+[build]
+  command = 'npm run generate'
+  functions = 'functions'
+  publish = 'dist'
+
+[context.branch-deploy.environment]
+  NODE_ENV = 'development'
+
+[context.dev.environment]
+  NODE_ENV = 'development'

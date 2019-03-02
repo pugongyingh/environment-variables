@@ -6,7 +6,7 @@
         environment-variables
       </h1>
       <h2 class="subtitle">
-        My tiptop Nuxt.js project
+        My tiptop Nuxt.js project in {{ environment }}
       </h2>
       <div class="links">
         <a
@@ -30,7 +30,12 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  data() {
+    return {
+      environment: process.env.NODE_ENV,
+    };
+  },
 }
 </script>
 
