@@ -1,6 +1,6 @@
-require('dotenv').config();
-
-exports.handler = async () => ({
-  statusCode: 200,
-  body: `NODE_ENV: ${process.env.NODE_ENV}, SECOND_VAR: ${process.env.SECOND_VAR}`,
-});
+exports.handler = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: "Hello, World"
+  };
+};
